@@ -1,0 +1,28 @@
+// 导入base.less文件
+@import 'base.less';
+// 主体区域
+#main {
+    display: flex;
+    .category-left {
+        width: 0.8rem;
+        position: relative;
+        .mui-table-view-cell:after {
+            left: 0;
+        }
+    }
+    .category-right {
+        flex: 1;
+        position: relative;
+        .mui-row {
+            padding: 0.1rem;
+        }
+        a {
+            display: block;
+            text-align: center;
+            background-color: #fff;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
